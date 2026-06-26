@@ -5,7 +5,7 @@ export const statType = defineType({
   name: 'stat',
   title: 'Stat',
   type: 'document',
-  icon: NumberSymbolIcon,
+  icon: NumberIcon,
   fields: [
     defineField({
       name: 'label',
