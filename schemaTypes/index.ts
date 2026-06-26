@@ -2,7 +2,6 @@ import {aboutType} from './about'
 import {beforeAfterType} from './beforeAfter'
 import {galleryImageType} from './galleryImage'
 import {heroType} from './hero'
-import {postType} from './postType'
 import {processStepType} from './processStep'
 import {projectType} from './project'
 import {serviceType} from './service'
@@ -15,7 +14,6 @@ export const schemaTypes = [
   beforeAfterType,
   galleryImageType,
   heroType,
-  postType,
   processStepType,
   projectType,
   serviceType,
