@@ -16,7 +16,7 @@ Headless content management backend for the Velora Interiors website, powered by
 
 | Property         | Value             |
 | ---------------- | ----------------- |
-| **Project ID**   | `is280nl5`        |
+| **Project ID**   | `********`        |
 | **Dataset**      | `production`      |
 | **Schema Types** | 11 document types |
 
@@ -36,6 +36,26 @@ All content types are defined in `schemaTypes/` and deployed to Sanity:
 | `processStep`  | Design process timeline steps               |
 | `galleryImage` | Inspiration gallery with category filtering |
 | `siteSettings` | Global site configuration (SEO, contact)    |
+
+## Project Structure
+
+```
+velora-backend/
+├── schemaTypes/           # Sanity schema definitions
+│   └── index.ts           # Exports all schemas
+├── static/                # Static build output
+├── sanity.cli.ts          # Sanity CLI configuration
+├── sanity.config.ts       # Sanity Studio configuration
+├── package.json
+└── tsconfig.json
+```
+
+## Frontend
+
+The Next.js frontend that consumes this CMS lives in the same repository under `frontend/`.  
+It uses `next-sanity` client and GROQ queries to fetch content at build time.
+
+**Stack:** Next.js 16 (App Router) · Tailwind CSS v4 · Framer Motion · Nodemailer
 
 ## Managing Content
 
